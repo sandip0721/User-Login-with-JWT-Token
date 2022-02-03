@@ -29,7 +29,8 @@ app.post('/api/login',(req,res)=>{
     const user = {
         id: 1,
         username: "Sandip",
-        email: "sandip@gmail.com"
+        email: "sandip@gmail.com",
+        password: 1234567890
     }
     jwt.sign({user}, 'secretkey',(err,token)=>{
         res.json({
